@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="icon" aria-label="icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Maps App made with Material Angular</span>
+  <span class="spacer"></span>
+
+  <button *ngFor="let icon of icons" mat-icon-button class="icon" aria-label="{{ icon.ariaLabel }}">
+    <mat-icon>{{ icon.name }}</mat-icon>
+  </button>
+</mat-toolbar>
